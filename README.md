@@ -1,5 +1,7 @@
 ## Test Project from Mac terminal
 
+**The entire codebase has been written from a Mac terminal for pure exercise reasons**
+
 This small projects aims to:
     - test my GH connection from a Mac terminal
     - refresh my terminal terminology and usage knowledge (navigating, using vim, writing code from terminal)
