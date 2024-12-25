@@ -56,14 +56,31 @@ def main():
     plt.xlabel("Day")
     plt.ylabel("Portfolio Value ($)")
     plt.legend(loc="upper left")
+    
+    # Save the plot to an image (do this before plt.show() so the figure isn't cleared)
+    plt.savefig("monte_carlo_sim.png")
     plt.show()
 
-    # We can also look at some summary statistics at the end:
-    final_values_mc = mc_paths[:, -1]  # final capital of each path
-    print("Monte Carlo (10 paths) Final Values:")
+    # Final path values (at day = 365)
+    final_values_mc = mc_paths[:, -1]
+
+    # Print to console
+    print("Monte Carlo Final Values:")
     print(final_values_mc)
     print(f"  Mean final value:   ${final_values_mc.mean():.2f}")
     print(f"  Median final value: ${np.median(final_values_mc):.2f}")
+
+    # Save to a text file
+    with open("monte_carlo_sim.txt", "w") as f:
+        f.write("Monte Carlo Final Values:\n")
+        # If you want to write all final values on one line, you can do:
+        f.write(" ".join([f"{val:.2f}" for val in final_values_mc]) + "\n\n")
+
+        # Or just use str() representation:
+        # f.write(str(final_values_mc) + "\n\n")
+
+        f.write(f"Mean final value:   ${final_values_mc.mean():.2f}\n")
+        f.write(f"Median final value: ${np.median(final_values_mc):.2f}\n")
 
 if __name__ == "__main__":
     main()
