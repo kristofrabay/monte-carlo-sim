@@ -3,9 +3,9 @@
 **The entire codebase has been written from a Mac terminal for pure exercise reasons**
 
 This small projects aims to:
-    - test my GH connection from a Mac terminal
-    - refresh my terminal terminology and usage knowledge (navigating, using vim, writing code from terminal)
-    - run a quick Monte Carlo (and possibly Markov) simulation on a basic example
+- test my GH connection from a Mac terminal
+- refresh my terminal terminology and usage knowledge (navigating, using vim, writing code from terminal)
+- run a quick Monte Carlo (and possibly Markov) simulation on a basic example
 
 
 Monte Carlo simulation basis:
