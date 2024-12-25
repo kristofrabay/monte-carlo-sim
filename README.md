@@ -7,7 +7,6 @@ This small projects aims to:
 - refresh my terminal terminology and usage knowledge (navigating, using vim, writing code from terminal)
 - run a quick Monte Carlo (and possibly Markov) simulation on a basic example
 
-
 Monte Carlo simulation basis:
 1. Given a portfolio with starting $100
 2. Each day, 50-50% of 1% loss or 1% gain
